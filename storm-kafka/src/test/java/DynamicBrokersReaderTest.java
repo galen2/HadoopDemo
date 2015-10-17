@@ -17,6 +17,8 @@
  */
 
 import backtype.storm.Config;
+import backtype.storm.topology.OutputFieldsDeclarer;
+
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;

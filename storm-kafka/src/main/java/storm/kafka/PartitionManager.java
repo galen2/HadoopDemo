@@ -267,7 +267,6 @@ public class PartitionManager {
                             "port", _partition.host.port))
                     .put("topic", _spoutConfig.topic).build();
             _state.writeJSON(committedPath(), data);
-
             _committedTo = lastCompletedOffset;
             LOG.debug("Wrote last completed offset (" + lastCompletedOffset + ") to ZK for " + _partition + " for topology: " + _topologyInstanceId);
         } else {

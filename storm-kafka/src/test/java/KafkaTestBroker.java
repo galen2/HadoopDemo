@@ -29,6 +29,7 @@ import org.apache.curator.framework.imps.CuratorFrameworkState;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.curator.test.InstanceSpec;
 import org.apache.curator.test.TestingServer;
+import org.junit.Test;
 
 /**
  * Date: 11/01/2014
@@ -90,5 +91,10 @@ public class KafkaTestBroker {
             e.printStackTrace();
         }
         FileUtils.deleteQuietly(logDir);
+    }
+    
+    @Test
+    public void CuratorFrameworkTest(){
+    	
     }
 }
